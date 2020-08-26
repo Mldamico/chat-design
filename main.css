@@ -1,0 +1,60 @@
+*,
+html {
+  box-sizing: content-box;
+  margin: 0;
+}
+
+body {
+  height: 80vh;
+}
+
+.container {
+  display: flex;
+  position: relative;
+}
+
+.banner {
+  height: 80vh;
+  width: 500px;
+  background: linear-gradient(hsl(293, 100%, 63%), hsl(264, 100%, 61%));
+  border-radius: 0 0 250px 250px;
+  position: absolute;
+  left: -70px;
+}
+
+.phone {
+  height: 500px;
+  width: 250px;
+  position: absolute;
+  left: 450px;
+  top: 150px;
+  background-color: #fff;
+  border-radius: 30px;
+}
+
+.phone-container {
+  display: flex;
+}
+
+.phone-heading {
+  background: linear-gradient(
+    to right,
+    hsl(293, 100%, 63%),
+    hsl(264, 100%, 61%)
+  );
+  height: 50px;
+  margin: 10px;
+  width: 100%;
+  position: relative;
+  border-radius: 25px 25px 5px 5px;
+}
+
+.phone-heading-gap {
+  background-color: #fff;
+  height: 20px;
+  width: 145px;
+  position: absolute;
+  top: -2px;
+  left: 17%;
+  border-radius: 0 0 20px 20px;
+}
