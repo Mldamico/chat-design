@@ -30,21 +30,24 @@ body {
   top: 150px;
   background-color: #fff;
   border-radius: 30px;
+  box-shadow: 9px 11px 23px 10px rgba(0, 0, 0, 0.27);
 }
 
 .phone-container {
   display: flex;
+  flex-direction: column;
+  height: 70px;
+  margin: 10px;
+  width: 91%;
 }
 
 .phone-heading {
   background: linear-gradient(
-    to right,
+    to left,
     hsl(293, 100%, 63%),
     hsl(264, 100%, 61%)
   );
-  height: 50px;
-  margin: 10px;
-  width: 100%;
+
   position: relative;
   border-radius: 25px 25px 5px 5px;
 }
@@ -57,4 +60,61 @@ body {
   top: -2px;
   left: 17%;
   border-radius: 0 0 20px 20px;
+}
+
+.heading-container {
+  display: flex;
+  margin: 30px 20px;
+  font-size: 10px;
+  color: #fff;
+  justify-content: space-between;
+}
+
+.heading-container-left {
+  display: flex;
+}
+
+.heading-image img {
+  width: 22px;
+  height: 22px;
+  border-radius: 50%;
+  border: 1px solid #fff;
+  margin: 0 5px;
+}
+
+.heading-arrow {
+  border-left: 1px solid;
+  border-top: 1px solid;
+  height: 7px;
+  width: 7px;
+  transform: rotate(-45deg);
+  justify-items: center;
+  margin-top: 10px;
+}
+
+.heading-name {
+  font-weight: bold;
+  font-size: 12px;
+  color: hsl(276, 100%, 81%);
+}
+
+.heading-subtitle {
+  font-size: 8px;
+  margin-top: 4px;
+  color: hsl(276, 100%, 81%);
+}
+
+.heading-hamburger {
+  margin-top: 5px;
+}
+
+.heading-hamburger div {
+  width: 2px;
+  height: 2px;
+  background-color: #fff;
+  margin: 2px;
+}
+
+.phone-body {
+  background-color: black;
 }
