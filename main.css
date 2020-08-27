@@ -39,6 +39,7 @@ body {
   height: 70px;
   margin: 10px;
   width: 91%;
+  /* background-color: hsl(270, 20%, 96%); */
 }
 
 .phone-heading {
@@ -116,5 +117,35 @@ body {
 }
 
 .phone-body {
-  background-color: black;
+  background-color: hsl(270, 20%, 96%);
+  flex-grow: 5;
+  flex-basis: auto;
+}
+
+.message {
+  display: flex;
+
+  font-size: 10px;
+}
+
+.message-left {
+  justify-content: flex-start;
+  width: 50%;
+  margin: 10px;
+  background-color: #eee3f4;
+  border-radius: 10px 10px 10px 5px;
+}
+
+.message-left p {
+  padding: 5px;
+  color: hsl(276, 55%, 52%);
+}
+
+.message-right {
+  justify-content: flex-end;
+}
+
+.message-right p {
+  padding: 5px;
+  color: hsl(271, 15%, 43%);
 }
