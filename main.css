@@ -2,6 +2,8 @@
 html {
   box-sizing: content-box;
   margin: 0;
+  font-family: 'Rubik', sans-serif;
+  font-family: 16px;
 }
 
 body {
@@ -125,12 +127,14 @@ body {
 .message {
   display: flex;
 
-  font-size: 10px;
+  font-size: 7px;
+  font-weight: 400;
+  letter-spacing: 0.5px;
 }
 
 .message-left {
   justify-content: flex-start;
-  width: 50%;
+  width: 55%;
   margin: 10px;
   background-color: #eee3f4;
   border-radius: 10px 10px 10px 5px;
@@ -143,9 +147,30 @@ body {
 
 .message-right {
   justify-content: flex-end;
+  /* width: 55%; */
+  /* background-color: #fff; */
 }
 
 .message-right p {
   padding: 5px;
   color: hsl(271, 15%, 43%);
+}
+
+.image-chat {
+  width: 40px;
+  height: 40px;
+  margin: 5px;
+  border-radius: 10px;
+}
+
+.image-chat:nth-child(3) {
+  margin-right: 10px;
+}
+
+.width-50 {
+  max-width: 50%;
+  background-color: #fff;
+  border-radius: 10px 10px 5px 10px;
+  box-shadow: 10px 15px 50px -10px rgba(0, 0, 0, 0.75);
+  margin: 5px;
 }
