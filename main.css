@@ -15,7 +15,9 @@ body {
   display: flex;
   position: relative;
   width: 100%;
-  height: 100%;
+  height: 100vh;
+
+  overflow: hidden;
 }
 
 .banner {
@@ -257,13 +259,13 @@ body {
 
 .description-container {
   position: absolute;
-  top: 50%;
-  left: 45%;
+  top: 40%;
+  left: 50%;
 }
 .description {
   display: flex;
   flex-direction: column;
-  width: 50%;
+  width: 60%;
 }
 
 .description h1 {
@@ -279,4 +281,15 @@ body {
   font-size: 14px;
   color: hsl(270, 7%, 64%);
   line-height: 26px;
+}
+
+.banner-inverse {
+  background: linear-gradient(hsl(293, 100%, 63%), hsl(264, 100%, 61%));
+  opacity: 0.1;
+  border-radius: 250px 250px 0 0;
+  height: 80vh;
+  width: 400px;
+  position: absolute;
+  bottom: 0;
+  right: -150px;
 }
